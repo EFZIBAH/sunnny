@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* hero-section */
+.hero-section{
+  height: 100vh;
+  background-image: url(../images/images/desktop/image-header.jpg);
+  background-size: 100%;
+  background-repeat: none;
+  background-repeat: no-repeat;
+}
+.hero-section header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 10vh;
+}
+.hero-section .nav-links{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  /* display: none; */
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.icon{
+  display: none;
+}
+/* section */
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+section .box-text{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  min-height: 50vh;
+}
+section .box-text .align-left{
+  width: 75%;
+}
+section .box-text .align-left h2{
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+section .box-text .align-left p{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+section .box-text .align-left a{
+  font-size: 15px;
+  color: black;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+section .box-picture-image{
+  width: 100%;
+}
+section .box-picture-text{
+  width: 100%;
+  position: relative;
+}
+section .box-picture-text .big-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  position: absolute;
+  bottom: 90px;
+
+}
+section .box-picture-text .text{
+  width: 70%;
+  text-align: center;
+}
+section .box-picture-text .text h2{
+  font-size: 30px;
+}
+section .box-picture-text .text p{
+  font-size: 20px;
+}
+section .box-picture-text2{
+  width: 100%;
+}
+section .box-picture-text2{
+  width: 100%;
+  position: relative;
+}
+section .box-picture-text2 .big-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  height: 20vh;
+  position: absolute;
+  bottom: 90px;
+
+}
+section .box-picture-text2 .text{
+  width: 70%;
+  text-align: center;
+}
+section .box-picture-text2 .text h2{
+  font-size: 30px;
+}
+section .box-picture-text2 .text p{
+  font-size: 20px;
+}
+.heading{
+  text-align: center;
+}
+.client-testimonies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client{
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.testimonies{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.testimonies .user-pics img {
+  width: 100%;
+  border-radius: 100px;
+}
+.testimonies .user-pics {
+  text-align: center;
+  width: 50%;
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+.testimonies .user-comment {
+  color: hsl(212, 27%, 19%);
+  margin-bottom: 20px;
+}
+
+
+/* hgroup */
+hgroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+hgroup .footer-image{
+  width: 100%;
+}
+hgroup .footer-image img{
+  width: 100%;
+}
+
+aside{
+  display: none;
+}
+footer {
+  background-color: hsl(168, 34%, 41%);
+  height: 50vh;
+  margin: 0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-footer h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.footer-list li a {
+  color: black;
+  font-size: 20px;
+}
+.footer-list li {
+  padding: 0 20px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  font-size: 50px;
+}
+.footer-icons img{
+  width: 40px;
+}
+
+
+
+
+
+
+/* mobile responsiveness */
+@media (max-width:800px) {
+  .hero-section{
+    height: 100vh;
+    background-image: url(../images/images/mobile/image-header.jpg);
+    background-size: 100%;
+    background-position-y: -330px;
+    background-repeat: no-repeat;
+  }
+ header .nav-links{
+    display:none;
+    background-color: blue;
+  }
+  .icon{
+    display: block;
+  }
+  section{
+    display: block;
+  }
+section .box-picture-text .big-text{
+  bottom: 50px;
+}
+.client{
+  display: block;
+}
+hgroup{
+  display: none;
+}
+aside{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+aside .footer-image{
+  width: 100%;
+}
+
+}
