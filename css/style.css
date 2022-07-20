@@ -7,8 +7,8 @@
 .hero-section{
   height: 100vh;
   background-image: url(../images/images/desktop/image-header.jpg);
-  background-size: 100%;
-  background-repeat: none;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .hero-section header{
@@ -22,7 +22,6 @@
   display: flex;
   justify-content: space-between;
   width: 300px;
-  /* display: none; */
 }
 li{
   list-style: none;
@@ -31,14 +30,13 @@ a{
   text-decoration: none;
   color: white;
 }
-.icon{
+.sm-navbar{
   display: none;
 }
 /* section */
 section{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
 }
 img{
   width: 100%;
@@ -47,12 +45,13 @@ img{
 section .box-text{
   display: flex;
   justify-content: space-around;
-  width: 100%;
   align-items: center;
   min-height: 50vh;
+  text-align: center;
 }
 section .box-text .align-left{
-  width: 75%;
+  padding: 15px 40px ;
+  text-align: left;
 }
 section .box-text .align-left h2{
   font-size: 50px;
@@ -124,35 +123,32 @@ section .box-picture-text2 .text p{
 .heading{
   text-align: center;
 }
+
+/* Client testimonies */
 .client-testimonies{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 20px;
+}
+.client-testimonies h2{
+  text-transform: capitalize;
 }
 .client{
-  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
 }
 .testimonies{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 30vh;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+}
+.testimonies .user-pics {
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .testimonies .user-pics img {
   width: 100%;
   border-radius: 100px;
-}
-.testimonies .user-pics {
-  text-align: center;
-  width: 50%;
-  padding: 0 40px;
-  margin-bottom: 20px;
 }
 .testimonies .user-comment {
   color: hsl(212, 27%, 19%);
@@ -172,9 +168,6 @@ hgroup .footer-image img{
   width: 100%;
 }
 
-aside{
-  display: none;
-}
 footer {
   background-color: hsl(168, 34%, 41%);
   height: 50vh;
@@ -222,38 +215,31 @@ footer {
 
 /* mobile responsiveness */
 @media (max-width:800px) {
-  .hero-section{
-    height: 100vh;
-    background-image: url(../images/images/mobile/image-header.jpg);
-    background-size: 100%;
-    background-position-y: -330px;
-    background-repeat: no-repeat;
-  }
- header .nav-links{
-    display:none;
+ header .none{
+    display: none;
     background-color: blue;
   }
-  .icon{
+  .sm-navbar{
     display: block;
+  }
+  .sm-navbar .nav-items{
+    display: none;
   }
   section{
     display: block;
   }
 section .box-picture-text .big-text{
-  bottom: 50px;
+  bottom: 40px;
+}
+section .box-picture-text2 .big-text{
+  bottom: 40px;
 }
 .client{
   display: block;
 }
 hgroup{
-  display: none;
-}
-aside{
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-aside .footer-image{
-  width: 100%;
 }
 
 }
