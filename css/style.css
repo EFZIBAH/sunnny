@@ -33,6 +33,10 @@ a{
 .sm-navbar{
   display: none;
 }
+.sm-navbar button{
+  background-color: transparent;
+  border-color: transparent;
+}
 .creative{
   display: flex;
   flex-direction: column;
